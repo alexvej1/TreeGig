@@ -1,0 +1,166 @@
+[
+    {
+        "text": "Hot Deals",
+        "iconClass": "icon ion-map",
+        "link": "6"
+    },
+    {
+        "text": "automotive",
+        "iconClass": "icon ion-model-s",
+        "link": "0"
+    },
+    {
+        "text": "beauty-and-spas",
+        "iconClass": "icon ion-map",
+        "link": "1"
+    },
+    {
+        "text": "food-and-drink",
+        "iconClass": "icon ion-pizza",
+        "link": "2"
+    },
+    {
+        "text": "health-and-fitness",
+        "iconClass": "icon ion-ios-body",
+        "link": "3"
+    },
+    {
+        "text": "home-improvement",
+        "iconClass": "icon ion-home",
+        "link": "4"
+    },
+    {
+        "text": "local-services",
+        "iconClass": "icon ion-gear-b",
+        "link": "5"
+    },
+    {
+        "text": "shopping",
+        "iconClass": "icon ion-ios-cart",
+        "link": "6"
+    }
+    ,
+    {
+        "text": "things-to-do",
+        "iconClass": "icon ion-ios-list",
+        "link": "7"
+    }
+    ,
+    {
+        "text": "auto-and-home-improvement",
+        "iconClass": "icon ion-settings",
+        "link": "8"
+    }
+    ,
+    {
+        "text": "baby-kids-and-toys",
+        "iconClass": "icon ion-ios-football",
+        "link": "9"
+    },
+    {
+        "text": "collectibles",
+        "iconClass": "icon ion-map",
+        "link": "10"
+    },
+    {
+        "text": "electronics",
+        "iconClass": "icon ion-iphone",
+        "link": "11"
+    },
+    {
+        "text": "entertainment-and-media",
+        "iconClass": "icon ion-map",
+        "link": "12"
+    },
+    {
+        "text": "food-and-drink-goods",
+        "iconClass": "icon ion-map",
+        "link": "13"
+    },
+    {
+        "text": "health-and-beauty-goods",
+        "iconClass": "icon ion-map",
+        "link": "14"
+    },
+    {
+        "text": "home-and-garden",
+        "iconClass": "icon ion-ios-rose",
+        "link": "15"
+    },
+    {
+        "text": "household-essentials",
+        "iconClass": "icon ion-map",
+        "link": "16"
+    },
+    {
+        "text": "jewelry-and-watches",
+        "iconClass": "icon ion-map",
+        "link": "17"
+    },
+    {
+        "text": "men",
+        "iconClass": "icon ion-man",
+        "link": "18"
+    },
+    {
+        "text": "sports-and-outdoors",
+        "iconClass": "icon ion-map",
+        "link": "19"
+    },
+    {
+        "text": "women",
+        "iconClass": "icon ion-woman",
+        "link": "20"
+    },
+    {
+        "text": "accommodation",
+        "iconClass": "icon ion-map",
+        "link": "21"
+    }
+
+    ,
+    {
+        "text": "bed-and-breakfast-travel",
+        "iconClass": "icon ion-map",
+        "link": "22"
+    }
+
+    ,
+    {
+        "text": "cabin-travel",
+        "iconClass": "icon ion-map",
+        "link": "23"
+    }
+    ,
+    {
+        "text": "cruise-travel",
+        "iconClass": "icon ion-map",
+        "link": "24"
+    }
+    ,
+    {
+        "text": "hotels",
+        "iconClass": "icon ion-map",
+        "link": "25"
+    }
+    ,
+    {
+        "text": "resort-travel",
+        "iconClass": "icon ion-map",
+        "link": "26"
+    }
+    ,
+    {
+        "text": "tour-travel",
+        "iconClass": "icon ion-map",
+        "link": "27"
+    }
+    ,
+    {
+        "text": "vacation-rental-travel",
+        "iconClass": "icon ion-map",
+        "link": "28"
+    }
+
+
+]

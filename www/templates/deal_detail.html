@@ -1,0 +1,54 @@
+<ion-view ng-controller="DealDetailCtrl as vm">
+
+    <ion-content class="has-header">
+        <div class="list card">
+            <div class="col-center">
+                <h5>{{vm.deal.title}}</h5>
+            </div>
+            <div class="item tabs tabs-secondary tabs-icon-left">
+                <a class="tab-item" ng-click="share()">
+                    <i class="icon ion-share"></i>
+                    Share
+                </a>
+
+                <a class="tab-item" ng-click="vm.bookmark()">
+                    <i class="ion-bookmark"></i>
+                    {{vm.checkBookmark();}}
+                </a>
+                <a class="tab-item" ng-click="vm.openDeal()">
+
+                    <i class="icon ion-log-in"></i>
+                    Go To
+                </a>
+            </div>
+            <div class="item item-body col-center">
+                <img class="full-image" ng-src={{vm.deal.largeImageUrl}}>
+
+                <div class="col-center item-text-wrap">
+
+                    <div class="col-center">
+                        <!--  "{{vm.subcategory}}"-->
+                    </div>
+                </div>
+
+                <div ng-bind-html="vm.deal.pitchHtml | to_trusted"></div>
+            </div>
+            <div class="row">
+
+                <div id="loc" ng-repeat="location in vm.locations">
+
+                    <h4> {{location.name}}<br>
+                        {{location.streetAddress1}}<br>
+                        {{location.city}} <br>
+                        {{location.state}} {{location.postalCode}}<br>
+                        {{location.phoneNumber}}</h4>
+                    <h4 class="blue" ng-click="vm.navigate(location.lat,location.lng)">Get Directions</h4>
+
+                </div>
+            </div>
+        </div>
+
+        <div id="map" data-tap-disabled="true">
+        </div>
+    </ion-content>
+</ion-view>

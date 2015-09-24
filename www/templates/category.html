@@ -1,0 +1,30 @@
+<ion-view ng-controller="CategoryController as vm" title={{vm.title}} hide-back-button="true" left-buttons="leftButtons"
+          right-buttons="rightButtons"
+          hide-back-button="true">
+    <ion-content has-header="true" padding="true">
+
+        <ion-refresher pulling-text="Pull to refresh..." on-refresh="vm.loadList(true)"></ion-refresher>
+
+        <div class="list card item-text-wrap">
+            <a nav-direction="forward" class="item item-thumbnail-left item-icon-right" ng-repeat="deal in vm.deals"
+               ng-click="vm.selectDeal(deal.uuid,vm.title)">
+                <img ng-src={{deal.mediumImageUrl}} width="70" height="70">
+
+                <div class="item-icon-right">
+                    <h6 class="col-center italic"><img ng-src={{deal.smallImageUrl}} width="10" height="10">
+                        {{deal.shortAnnouncementTitle}}</h6>
+                    <span class="badge "><h6>
+                        <div ng-show="{{deal.expiresInDays}}">Expires {{deal.expiresInDays}}</div>
+                    </h6></span>
+                </div>
+                <h5>{{deal.title}}</h5>
+                <h6 class="blue"><img ng-src={{deal.smallImageUrl}} width="10" height="10"> {{deal.redemptionLocation}}
+                </h6>
+                <i class="icon ion-chevron-right icon-accessory"></i>
+            </a>
+        </div>
+
+
+    </ion-content>
+
+</ion-view>

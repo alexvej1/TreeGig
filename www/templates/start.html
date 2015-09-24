@@ -1,0 +1,71 @@
+<ion-view title="Hot Deals" hide-back-button="true" left-buttons="leftButtons" right-buttons="rightButtons"
+          hide-back-button="true" ng-controller="StartCtrl1 as vm">
+
+    <div class="bar bar-subheader bar-calm">
+        <h2 class="title">{{vm.dealTitle}}</h2>
+    </div>
+
+    <ion-content class="has-header has-subheader" padding="true">
+        <ion-slide-box on-slide-changed="vm.slideHasChanged($index)" auto-play="true" does-continue="true"
+                       show-pager="false">
+
+            <ion-slide ng-repeat="deal in vm.deals">
+
+                <div class="card">
+
+                    <div class="item item-avatar">
+                        <img ng-src={{vm.smallpreviewimage}}>
+
+                        <h2>{{vm.category}}</h2>
+
+                        <h2>Expire {{vm.expirydate}}</h2>
+                    </div>
+
+                    <div class="item item-body col-center">
+                        <img class="full-image" ng-src={{vm.largepreviewimage}}>
+
+                        <div class="col-center">
+                            <h5>{{vm.dealTitle}}</h5>
+
+                        </div>
+                        <div class="col-center">
+                            <h5>{{vm.price}}</h5>
+
+                        </div>
+                        <div class="col-center">
+                            <p>{{vm.category}}</p>
+
+                        </div>
+                        <div class="col-center">
+                            <p>{{vm.subcategory}}</p>
+                        </div>
+                        <!-- <p>
+                             <a href="#" class="subdued">1 Like</a>
+                             <a href="#" class="subdued">5 Comments</a>
+                         </p>-->
+                    </div>
+
+                    <div class="item tabs tabs-secondary tabs-icon-left">
+                        <a class="tab-item" ng-click="share()">
+                            <i class="icon ion-share"></i>
+                            Share
+                        </a>
+
+                        <a class="tab-item" ng-click="vm.bookmark()">
+                            <i class="ion-bookmark"></i>
+                            {{vm.checkBookmark();}}
+                        </a>
+                        <a class="tab-item" ng-click="openDeal(vm.deal_id)">
+
+                            <i class="icon ion-log-in"></i>
+                            Go To
+                        </a>
+                    </div>
+
+                </div>
+            </ion-slide>
+
+        </ion-slide-box>
+    </ion-content>
+
+</ion-view>
